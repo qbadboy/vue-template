@@ -1,4 +1,4 @@
-# {{prject}}
+# {{project}}
 
 ## Project setup
 ```
