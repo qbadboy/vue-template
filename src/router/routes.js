@@ -1,13 +1,11 @@
 const routes = [
+  {{#each routes}}
   {
-    name: 'page1',
-    path: '/page1',
-    component: () => import('../pages/page1.vue')
+    name: '{{name}}',
+    path: '{{path}}',
+    component: () => import('{{module}}')
   },
-  {
-    name: 'page2',
-    path: '/page2',
-    component: () => import('../pages/page2.vue')
-  }
-]
+  {{/each}}
+];
+
 export default routes;

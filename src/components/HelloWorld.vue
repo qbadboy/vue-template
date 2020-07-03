@@ -1,8 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <router-link class="link" to="/page1">page1</router-link>
-    <router-link class="link" to="/page2">page2</router-link>
+    {{#each routes}}
+    <router-link class="link" to="{{to}}">{{name}}</router-link>
+    {{/each}}
   </div>
 </template>
 
