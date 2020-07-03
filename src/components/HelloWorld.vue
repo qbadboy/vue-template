@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <router-link class="link" to="/page1">page1</router-link>
+    <router-link class="link" to="/page2">page2</router-link>
   </div>
 </template>
 
@@ -28,5 +30,9 @@ li {
 }
 a {
   color: #42b983;
+}
+
+.link{
+  margin: 0 10px;
 }
 </style>
