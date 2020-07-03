@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>hello</h1>
+    {{#each routes}}
+    <router-link class="link" to="{{path}}">{{name}}</router-link>
+    {{/each}}
   </div>
 </template>
 

@@ -1,11 +1,9 @@
 const routes = [
-  {{#each routes}}
   {
-    name: '{{name}}',
-    path: '{{path}}',
-    component: () => import('{{module}}')
+    name: '',
+    path: '',
+    component: null,
   },
-  {{/each}}
 ];
 
 export default routes;
